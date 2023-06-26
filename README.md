@@ -1,6 +1,7 @@
 # -
 矿大校园网自动登录，需要挂在Linux系统上，用cron做计划任务执行
-将第8行
+openwrt用了openclash的使用openclash.login.sh，没有openclash的使用login.sh，区别就在于openclash打开时会影响登录，需要在登陆时关闭。需要登录信息通知发送到Telegram的，请在openclash.login.sh里修改，有被注释掉的两三行代码，可以自行研究如何使用Telegram的bot。
+将：
 user_account=02210000%40cmcc&user_password=123456789&wlan_user_ip=0.0.0.0&wlan_user_mac=00:00:00:00:00:00
 账号为学号加运营商代号，例如：
 中国移动：02210000%40cmcc
