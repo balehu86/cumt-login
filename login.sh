@@ -5,7 +5,7 @@
 
 #login method
 login(){
-        curl -s -X GET 'http://10.2.5.251:801/eportal/?c=Portal&a=login&login_method=1&user_account=02210765%40cmcc&user_password=OhMaU286&wlan_user_ip=10.4.248.62&wlan_user_mac=70:E2:4C:68:3E:A9'
+        curl -s -X GET 'http://10.2.5.251:801/eportal/?c=Portal&a=login&login_method=1&user_account=02210000%40cmcc&user_password=123456789&wlan_user_ip=0.0.0.0&wlan_user_mac=00:00:00:00:00:00'
 }
 
 #judge the net work well or not
@@ -26,7 +26,7 @@ fi
 #get the time
 time=$(date '+%y-%m-%d %H:%M:%S')
 #send message to telegram
-#curl -s "https://api.telegram.org/bot5329391020:AAH8dHkIRpwPxxhSfCiGWoCikpMkaW33EI8/getupdates"
+#curl -s "https://api.telegram.org/bot5329000000:AAH8dHkIRpwPxxhSfCiGWoCikpMka000000/getupdates"
 #print log to logfile
 echo '认证成功   '$time > /tmp/log/login.log
 echo '认证成功   '$time >> /root/login.sh.log
